@@ -1,0 +1,23 @@
+:root {
+    background: black;
+}
+
+path {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.unfinished {
+    stroke-dasharray: 14341;
+    stroke-dashoffset: 14341;
+    animation: 50s linear infinite net;
+}
+
+@keyframes net {
+    from {
+        stroke-dashoffset: 14341;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
